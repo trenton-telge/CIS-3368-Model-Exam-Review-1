@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="180.0" prefWidth="250.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.trentontelge.App4Controller">
+    <Label layoutX="72.0" layoutY="14.0" text="Enter your birthday:" />
+    <DatePicker fx:id="BirthdayInput" layoutX="38.0" layoutY="44.0" />
+    <Button fx:id="CanVoteButton" layoutX="87.0" layoutY="84.0" mnemonicParsing="false" text="Can I vote?" />
+    <Label fx:id="VoteOutput" layoutX="99.0" layoutY="130.0" prefWidth="50.0" textAlignment="CENTER" />
+</AnchorPane>

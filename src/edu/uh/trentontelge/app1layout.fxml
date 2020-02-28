@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.trentontelge.App1Controller">
+    <HBox layoutX="75.0" layoutY="46.0" prefWidth="200.0">
+        <VBox alignment="TOP_RIGHT" minWidth="60.0" spacing="16.0">
+            <padding>
+                <Insets right="4.0" top="4.0" />
+            </padding>
+            <Label text="Number 1" />
+            <Label text="Number 2" />
+        </VBox>
+        <VBox spacing="8.0">
+            <padding>
+                <Insets left="4.0" />
+            </padding>
+            <TextField fx:id="Num1" />
+            <TextField fx:id="Num2" />
+        </VBox>
+    </HBox>
+    <HBox alignment="TOP_CENTER" layoutX="39.0" layoutY="131.0" spacing="8.0">
+        <padding>
+            <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+        </padding>
+        <RadioButton fx:id="CalcFunctionAdd" mnemonicParsing="false" selected="true" text="Add">
+            <toggleGroup>
+                <ToggleGroup fx:id="CalcFunctions" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="CalcFunctionSubtract" mnemonicParsing="false" text="Subtract" toggleGroup="$CalcFunctions" />
+        <RadioButton fx:id="CalcFunctionMultiply" mnemonicParsing="false" text="Multiply" toggleGroup="$CalcFunctions" />
+        <RadioButton fx:id="CalcFunctionDivide" mnemonicParsing="false" text="Divide" toggleGroup="$CalcFunctions" />
+    </HBox>
+    <HBox layoutX="75.0" layoutY="201.0" prefWidth="200.0" spacing="8.0">
+        <Button fx:id="CalcComputeButton" minWidth="70.0" mnemonicParsing="false" text="Compute" />
+        <HBox prefWidth="200.0" spacing="8.0">
+            <padding>
+                <Insets top="4.0" />
+            </padding>
+            <HBox.margin>
+                <Insets left="12.0" />
+            </HBox.margin>
+            <Label text="Result:" />
+            <Label fx:id="CalcResult" />
+        </HBox>
+    </HBox>
+</AnchorPane>

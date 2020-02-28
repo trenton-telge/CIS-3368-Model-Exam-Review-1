@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="150.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.trentontelge.MainAppController">
+    <Label layoutX="38.0" layoutY="23.0" text="Run which sample app?"/>
+    <ChoiceBox fx:id="appPicker" layoutX="25.0" layoutY="56.0" prefWidth="150.0"/>
+    <Button fx:id="runButton" layoutX="75.0" layoutY="107.0" mnemonicParsing="false" text="Run"/>
+</AnchorPane>

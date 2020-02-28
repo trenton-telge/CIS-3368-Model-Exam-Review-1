@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.trentontelge.App3Controller">
+   <HBox layoutX="42.0" layoutY="54.0">
+      <VBox alignment="TOP_RIGHT" spacing="16.0">
+         <HBox.margin>
+            <Insets right="4.0"/>
+         </HBox.margin>
+         <padding>
+            <Insets top="4.0"/>
+         </padding>
+         <Label text="Loan Term (Months):"/>
+         <Label text="Annual Interest Rate (Percent):"/>
+         <Label text="Loan Amount:"/>
+         <Label text="Loan Type:"/>
+      </VBox>
+      <VBox spacing="8.0">
+         <TextField fx:id="LoanTermInput"/>
+         <TextField fx:id="InterestRateInput"/>
+         <TextField fx:id="LoanAmountInput"/>
+         <ChoiceBox fx:id="LoanTypeSelection" prefWidth="150.0"/>
+      </VBox>
+   </HBox>
+   <Label layoutX="159.0" layoutY="14.0" text="Loan Calculator"/>
+   <Label fx:id="OutputText" layoutX="50.0" layoutY="253.0" prefWidth="300.0" textAlignment="CENTER" wrapText="true"/>
+   <Button fx:id="LoanCalculateButton" layoutX="119.0" layoutY="206.0" mnemonicParsing="false"
+           text="Calculate Monthly Payment"/>
+</AnchorPane>

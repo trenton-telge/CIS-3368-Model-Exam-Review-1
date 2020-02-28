@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.trentontelge.App2Controller">
+    <Label layoutX="82.0" layoutY="23.0" text="Month" />
+    <ChoiceBox fx:id="MonthChoice" layoutX="25.0" layoutY="41.0" prefWidth="150.0" />
+    <Label layoutX="90.0" layoutY="82.0" text="Day" />
+    <TextField fx:id="DayInput" layoutX="82.0" layoutY="100.0" prefHeight="26.0" prefWidth="36.0" />
+    <Button fx:id="FindSeasonButton" layoutX="60.0" layoutY="150.0" mnemonicParsing="false" text="Find Season" />
+    <Label layoutX="81.0" layoutY="202.0" text="Season" />
+    <Label fx:id="SeasonOutput" layoutX="50.0" layoutY="228.0" minWidth="100.0" textAlignment="CENTER" />
+</AnchorPane>

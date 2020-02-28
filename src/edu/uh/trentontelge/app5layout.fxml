@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.uh.trentontelge.App5Controller">
+   <Label layoutX="115.0" layoutY="22.0" text="Select Shape:" />
+   <HBox layoutX="47.0" layoutY="47.0" spacing="8.0">
+      <RadioButton fx:id="CircleButton" mnemonicParsing="false" selected="true" text="Circle">
+         <toggleGroup>
+            <ToggleGroup fx:id="ShapeButtons" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="TriangleButton" mnemonicParsing="false" text="Triangle" toggleGroup="$ShapeButtons" />
+      <RadioButton fx:id="RectangleButton" mnemonicParsing="false" text="Rectangle" toggleGroup="$ShapeButtons" />
+   </HBox>
+   <HBox layoutX="50.0" layoutY="76.0" prefWidth="200.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <VBox alignment="TOP_RIGHT" prefWidth="100.0" spacing="16.0">
+         <padding>
+            <Insets right="4.0" top="4.0" />
+         </padding>
+         <Label fx:id="InLabel1" text="Radius" />
+         <Label fx:id="InLabel2" visible="false" />
+      </VBox>
+      <VBox prefWidth="150.0" spacing="8.0">
+         <padding>
+            <Insets left="4.0" />
+         </padding>
+         <TextField fx:id="InField1" />
+         <TextField fx:id="InField2" visible="false" />
+      </VBox>
+   </HBox>
+   <Button fx:id="AreaCalculateButton" layoutX="104.0" layoutY="150.0" mnemonicParsing="false" text="Calculate Area" />
+   <Label fx:id="AreaOutput" layoutX="136.0" layoutY="191.0" />
+</AnchorPane>
